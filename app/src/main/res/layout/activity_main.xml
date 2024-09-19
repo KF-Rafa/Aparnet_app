@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Primeira linha vertical -->
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:layout_marginStart="80dp"
+        android:background="#9C8C84" /> <!-- Cor para a linha -->
+
+    <!-- Segunda linha vertical -->
+    <View
+        android:layout_width="3dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="120dp"
+        android:background="#9C8C84" /> <!-- Cor para a linha -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background_color"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="100dp"
+            android:fontFamily="serif"
+            android:text="Cadastro"
+            android:textAlignment="center"
+            android:textSize="50dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:background="#91817A" /> <!-- Linha cor -->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/user"
+            android:fontFamily="serif"
+            android:hint="Usuário"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/type_user"
+            android:fontFamily="serif"
+            android:hint="Tipo de Usuário"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/user"
+            android:fontFamily="serif"
+            android:hint="Nome"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/pass"
+            android:drawableEnd="@drawable/eye"
+            android:fontFamily="serif"
+            android:hint="Senha"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/arroba"
+            android:fontFamily="serif"
+            android:hint="E-mail"
+            android:textSize="20sp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/custom_edittext_background"
+            android:drawableStart="@drawable/phone"
+            android:fontFamily="serif"
+            android:hint="Telefone"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/button1"
+            style="@style/CustomButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="52dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="100dp"
+            android:background="@drawable/button_background"
+            android:text="Cadastrar"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</FrameLayout>
+
